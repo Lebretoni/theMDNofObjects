@@ -135,11 +135,11 @@ Var name = “Michael”;
 
 sayNameForAll.call(this, “global”);    //output
 
-“global:Micheal”
+*“global:Micheal”*
 
 sayNameForAll.call(person1, “person2”);    //output
 
-“person1:Nicholas”
+*“person1:Nicholas”*
 
 sayNameForAll.call(person2, “person2”);    //output
 
