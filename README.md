@@ -116,3 +116,26 @@ _ You can call a method directly from an object as for example person.sayName(�
 
                                       *The call () Method* 
                        *Here’s an example of the function call () Method*
+                       
+                                           The call () Method 
+                 Here’s an example of the function call () Method
+Function sayNameForAll(label) {
+	console.log(label + “:” this.name);
+}
+
+Var person1 = {
+	Name: “Nicholas”
+};
+
+Var person2 = {
+	Name: “greg” 
+};
+
+Var name = “Michael”;
+
+sayNameForAll.call(this, “global”);    //output
+“global:Micheal”
+sayNameForAll.call(person1, “person2”);    //output
+“person1:Nicholas”
+sayNameForAll.call(person2, “person2”);    //output
+
